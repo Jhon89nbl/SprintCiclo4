@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ly1">
+
+        <TextView
+            android:id="@+id/txtUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:text="Usuario"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="80dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/ingrese_el_usuario"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:text="Contraseña"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="80dp"
+            android:ems="10"
+            android:hint="Ingrese la Contraseña"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#de744c"
+            android:text="Ingresar"
+            android:textColor="#212121"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ly1">
+        <TextView
+            android:id="@+id/txtFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="550dp"
+            android:text="Facebook"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
