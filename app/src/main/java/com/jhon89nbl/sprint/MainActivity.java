@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.Intent;
 
 import com.jhon89nbl.sprint.Controlador.ControladorLogin;
 
 public class MainActivity extends AppCompatActivity implements LoginIterface.View {
     private EditText usuario;
     private EditText contrasena;
-    private Button login;
+    private Button login,register;
     private ControladorLogin control = new ControladorLogin(this);
 
     @Override
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements LoginIterface.Vie
         usuario= (EditText) findViewById(R.id.editUsuario);
         contrasena= (EditText) findViewById(R.id.editPassword);
         login=(Button) findViewById(R.id.btnLogin);
+        register=(Button) findViewById(R.id.btnPageRegister);
         Toast.makeText(this, "ok", Toast.LENGTH_LONG).show();
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,8 +37,13 @@ public class MainActivity extends AppCompatActivity implements LoginIterface.Vie
                 }
             }
         });
-
-
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Registro.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
