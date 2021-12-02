@@ -14,7 +14,7 @@ public class ControladorLogin implements LoginIterface.Controlador {
 
     @Override
     public Boolean validarLogin(String editText, String indicador) {
-        if (indicador.equals("usuario")) {
+        if (indicador.equals("user")) {
             if (editText.trim().isEmpty()) {
                 view.validarConexion(indicador, "Los campos no pueden estar vacios");
                 return false;
