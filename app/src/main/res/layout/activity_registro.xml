@@ -113,6 +113,7 @@
             />
 
         <ImageView
+            android:id="@+id/imRegFoto"
             style="@style/edittext"
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -189,6 +190,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Celular"
+            android:inputType="number"
             android:layout_margin="10dp"
             android:minWidth="48dp"
             android:minHeight="48dp"
