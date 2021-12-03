@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Sprint</string>
     <array name="sexo">
-        <item>masculino</item>
-        <item>femenino</item>
+        <item>SELECCIONE EL SEXO</item>
+        <item>MASCULINO</item>
+        <item>FEMENINO</item>
+        <item>OTRO</item>
     </array>
 </resources>

@@ -1,6 +1,6 @@
 package com.jhon89nbl.sprint.Modelo;
 
-public class FormularioDto {
+public class FormularioDTO {
     private String editNombres;
     private String editApellidos;
     private String editDireccion;

@@ -1,6 +1,6 @@
 package com.jhon89nbl.sprint;
 
-import com.jhon89nbl.sprint.Modelo.FormularioDto;
+import com.jhon89nbl.sprint.Modelo.FormularioDTO;
 
 public interface FormularioInterfaz {
     interface View{
@@ -8,8 +8,8 @@ public interface FormularioInterfaz {
         void respuestaGuardadoUsuario(Boolean respuesta);
     }
     interface  Controlador{
-        Boolean validarFormulario(FormularioDto formularioDto);
-        Boolean usuarioGuardarUsuario(FormularioDto formularioDto);
+        Boolean validarFormulario(FormularioDTO formularioDTO);
+        Boolean usuarioGuardarUsuario(FormularioDTO formularioDTO);
 
     }
     interface Modelo{

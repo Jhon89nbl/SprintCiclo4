@@ -1,6 +1,6 @@
 package com.jhon89nbl.sprint.Modelo;
 
-public class UsuarioDto {
+public class UsuarioDTO {
     private String nombre;
     private String apellido;
     private String sexo;
@@ -12,7 +12,7 @@ public class UsuarioDto {
     private String usuario;
     private String password;
 
-    private static UsuarioDto instance = new UsuarioDto();
+    private static UsuarioDTO instance = new UsuarioDTO();
 
     public String getNombre() {
         return nombre;
@@ -94,11 +94,11 @@ public class UsuarioDto {
         this.password = password;
     }
 
-    public static UsuarioDto getInstance() {
+    public static UsuarioDTO getInstance() {
         return instance;
     }
 
-    public static void setInstance(UsuarioDto instance) {
-        UsuarioDto.instance = instance;
+    public static void setInstance(UsuarioDTO instance) {
+        UsuarioDTO.instance = instance;
     }
 }
