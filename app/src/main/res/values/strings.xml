@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Sprint</string>
+    <string name="title_Home">home</string>
+    <string name="title_perfil">perfil</string>
+    <string name="title_publicaciones">publicaciones</string>
     <array name="sexo">
         <item>SELECCIONE EL SEXO</item>
         <item>MASCULINO</item>

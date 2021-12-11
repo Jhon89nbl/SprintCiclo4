@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements LoginIterface.Vie
                 pass = control.validarLogin(contrasena.getText().toString(),"password");
                 if(user == true && pass == true){
                     control.usuarioPermitido(usuario.getText().toString(),contrasena.getText().toString());
+                    Intent intent = new Intent(v.getContext(),InicioApp.class);
+                    startActivity(intent);
                 }
             }
         });
